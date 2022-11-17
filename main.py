@@ -35,7 +35,7 @@ def home():
     #shuffled_bilder = random.sample(new_bilder, len(new_bilder))
     #list_random = list(set(new_bilder))
     #a = 16
-   # shuffled_bilder = random.sample(bilder, a)
+ 
 
 
     print(shuffled_bilder)
