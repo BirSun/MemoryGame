@@ -2,8 +2,6 @@
 from flask import Flask, render_template
 import random
 
-
-
 app = Flask(__name__)
 
 new_bilder=[]
@@ -18,7 +16,7 @@ def home():
     shuffled_bilder = []
     lista_bilder = []
     lista_bilder=["😹", "🐰", "🙋‍♂️", "🤠", "👩‍🔧", "🐶", "🐥", "💁🏻‍♀️"]
-    #lista_bilder = ["A", "B", "C", "D", "E", "F", "G", "H"]
+
     print(lista_bilder[1])
 
     list_of_bilder = lista_bilder
@@ -26,23 +24,13 @@ def home():
 
             bilder.append(item)
             bilder.append(item)
-    print(bilder)
 
-   # for item in bilder:
-      # new_bilder.append(item)
-      # new_bilder.splice(randInt, 1);
+
+
     shuffled_bilder = random.sample(bilder,16)
-    #shuffled_bilder = random.sample(new_bilder, len(new_bilder))
-    #list_random = list(set(new_bilder))
-    #a = 16
- 
 
 
-    print(shuffled_bilder)
     return render_template("index.html", shuffled_bilder=shuffled_bilder)
-
-
-
 
 
 
